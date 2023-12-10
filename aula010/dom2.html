@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom aula 2</title>
+    <style>
+        #aria{
+            font: normal 2em arial;
+            background-color: blueviolet;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            margin: auto;
+            
+          
+        }
+    </style>
+</head>
+<body>
+    <div id="aria">
+        interaja..
+    </div>
+
+    <script>
+         var a = document.getElementById('aria')
+         a.addEventListener('click',clik)
+         a.addEventListener('mouseenter',entrar)
+         a.addEventListener('mouseout',sail)
+        
+         function clik()
+        {
+           a.innerText ='clicoul'
+            a.style.background = 'red'
+        }
+        function entrar()
+        {
+         
+         a.innerText='entrol'
+        }
+        function sail(){
+        a.innerText = 'sail'
+        a.style.background='green'
+        }
+    </script>
+</body>
+</html>
