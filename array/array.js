@@ -21,5 +21,10 @@ const inclui = arr.includes("Gandalf")
 //slice
 const hobbits = arr.slice(0, 4)
 
+//subistituiçao dos elementos
+//splice
 
-alert(arr + "\n" +inclui +"\n" + hobbits)
+const elementoRemovido = arr.splice( arr, 1,"Gandalf,o cinzento")
+
+alert(arr + "\n" +inclui +"\n" + hobbits
++"\n"+elementoRemovido)
